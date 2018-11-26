@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.container--counter {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container--result {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container--buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.result {
+    height: 2.5em;
+    line-height: 2.5em;
+    width: 210px;
+    font-size: 120px;
+    overflow: auto;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #99cafa;
+    border-radius: 5px;
+    color: #2d3436;
+    text-align: center;
+}
+
+.btn {
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    margin: 5px;
+    font-size: 500%;
+    border-radius: 5px;
+    color: #2d3436;
+}
+.btn--refresh {
+    height: 50px;
+    width: 210px;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 200%;
+    border-radius: 5px;
+    color: #2d3436;
+    background-color:#fdcb6e;
+}
+
+.container--toast {
+   z-index: 1;
+   position:absolute;
+   bottom:0;
+   right:0;
+}
+
+.toast {
+    width: 250px; 
+    background-color: #636e72;
+    color: white;
+    text-align: center; 
+    border-radius: 2px; 
+    padding: 16px; 
+    margin: 2px;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+.btn--add {
+background-color: #55efc4;
+}
+
+.btn--remove {
+background-color: #fab1a0;
+}
+
+.btn--add:hover {
+    background-color: #d3e9e3;
+    cursor:pointer;
+    }
+    
+.btn--remove:hover {
+    background-color: #f3d7d1;
+    cursor: pointer; 
+}
+
+.btn--refresh:hover {
+    background-color: #ffeaa7;
+    cursor: pointer;
+}
